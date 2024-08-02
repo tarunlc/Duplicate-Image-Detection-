@@ -1,9 +1,9 @@
-Library Imports: Imported essential libraries including speech_recognition, pyttsx3, pywhatkit, datetime, wikipedia, and pyjokes to handle voice recognition, text-to-speech, YouTube playback, time retrieval, Wikipedia searches, and joke generation.
+Installed Necessary Packages: Installed the imagededup package, which is essential for image deduplication using various hashing methods and CNNs.
 
-Voice Recognition Setup: Initialized the speech recognizer and text-to-speech engine, setting the voice property to ensure clear and understandable speech output.
+Imported Required Libraries: Imported CNN from imagededup.methods, along with utility functions and libraries like pandas and matplotlib for data handling and visualization.
 
-Speech-to-Text Function: Developed a function take_command() to capture voice input from the microphone, recognize speech using Google's speech recognition, and convert it into text.
+Algorithm Initialization: Initialized the CNN algorithm using cnn = CNN(), preparing the model for encoding images.
 
-Command Processing: Implemented the run_alexa() function to interpret and execute various commands such as playing songs on YouTube, telling the current time, fetching Wikipedia summaries, and telling jokes.
+Defined Image Directory: Specified the directory containing images to be analyzed for duplicates, ensuring the model knows where to find the data.
 
-Continuous Listening: Created a loop to continuously listen for voice commands, ensuring the virtual assistant is always ready to respond to user requests.
+Encoded Images: Used the initialized CNN algorithm to encode images, leveraging the Global Average Pooling layer of a pretrained MobileNet model to generate unique encodings for each image.
